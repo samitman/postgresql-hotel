@@ -1,5 +1,6 @@
 --- Hotel Reservations DB Schema by Sam Itman
 CREATE DATABASE hotel;
+ALTER database hotel set search_path = hotel, public;
 \connect hotel;
 
 CREATE USER hotel_admin;
