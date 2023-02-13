@@ -1,10 +1,9 @@
 --- Hotel Reservations DB Schema by Sam Itman
-CREATE USER hotel_admin;
-
 CREATE DATABASE hotel;
-GRANT ALL PRIVILEGES ON DATABASE hotel TO hotel_admin;
+\connect hotel;
 
-\c hotel;
+CREATE USER hotel_admin;
+GRANT ALL PRIVILEGES ON DATABASE hotel TO hotel_admin;
 
 CREATE SCHEMA hotel_schema;
 
