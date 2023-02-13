@@ -1,6 +1,10 @@
 --- Hotel Reservations DB Schema by Sam Itman
 
-CREATE DATABASE hotel;
+CREATE DATABASE hotel
+    WITH
+    OWNER = postgres;
+
+CREATE SCHEMA hotel;
 
 --- Guests Table
 CREATE TABLE hotel.guests(
